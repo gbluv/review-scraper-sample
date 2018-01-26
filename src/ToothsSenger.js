@@ -8,7 +8,7 @@ import {
 
 //https://www.upwork.com/ab/proposals/953006270098407425
 
-const mainUrl =  "https://www.toothssenger.com/118276-ofallon-dentist-dr-edward-logan";
+const mainUrl = "https://www.toothssenger.com/118276-ofallon-dentist-dr-edward-logan";
 
 export default class extends Component {
 
@@ -18,12 +18,12 @@ export default class extends Component {
 
   componentDidMount(){
 
-    const addReviews = response => {
+    const addReviews = response =>{
 
       this.setState({
         reviews: parseResponse(response)
       });
-    }
+    };
 
     axios
         .get(mainUrl)
@@ -58,7 +58,7 @@ export default class extends Component {
         </div>;
 
 
-    const listOfReviews = this.state.reviews.map((review, i) =>  (
+    const listOfReviews = this.state.reviews.map((review, i) => (
 
             <ul key={i}>
               {listOfItems(review)}
@@ -77,10 +77,11 @@ export default class extends Component {
                 This is scrape result
               </h3>
               <h4>
-                <a style={{cursor: 'pointer'}} onClick={() => downloadWithCSVFormat(this.state.reviews)}>Download CSV</a>
+                <a style={{ cursor: 'pointer' }} onClick={() => downloadWithCSVFormat(this.state.reviews)}>Download
+                  CSV</a>
               </h4>
               <div className={"reviews"}>
-                {this.state.reviews.length ? listOfReviews : <h5>"loading..."</h5> }
+                {this.state.reviews.length ? listOfReviews : <h5>"loading..."</h5>}
               </div>
 
 

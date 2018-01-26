@@ -20,5 +20,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://satiusteam.github.io/sample-scraper/"
+  "homepage": "https://satiusteam.github.io/review-scraper-sample/"
 }

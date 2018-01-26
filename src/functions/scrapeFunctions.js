@@ -75,12 +75,14 @@ export const parseResponse = response => {
           itemToadd[ key ] = body;
         }
       }
+      return index;
     });
 
 
     if ( name.length && reviewBody.length && datePublished.length ) {
       results.push(itemToadd);
     }
+    return itemToadd;
   });
 
   return results;

@@ -88,7 +88,7 @@ export default class extends Component {
             </div>
             <div className={"col l4 m4 s4"}>
               <h3> This is the page we're scraping</h3>
-              <iframe style={{ height: '500px' }} src={mainUrl}></iframe>
+              <iframe title={"toothssenger"} style={{ height: '500px' }} src={mainUrl}></iframe>
             </div>
           </div>
         </div>
